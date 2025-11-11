@@ -9,10 +9,13 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
 }
-
-main {
-	padding: 1vh;
+section, 
+aside, 
+footer{
+    padding: 15px;
 }
 
 footer,
@@ -41,6 +44,10 @@ ul {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
+}
+
+a {
+	color: black;
 }
 
 h1 {
@@ -90,11 +97,22 @@ p {
 	}
 
 	.btn-nav {
+        text-align: center;
 		width: 100%;
 		font-size: 18px;
 		display: flex;
 		justify-content: space-around;
-		align-items: center;
+
+	}
+
+    .btn-nav-a {
+        border-bottom: #f2f2f2 solid 2px;
+        padding-bottom: 10px;
+        width: 50%;
+    }
+    .btn-nav-a:hover {
+        color: #0065fc;
+        border-bottom: #0065fc solid 2px;
 	}
 
 	/* Section en-tête */
@@ -178,6 +196,11 @@ p {
 		color: var(--main-color);
 		border-color: lightgray;
 	}
+
+	.a-bold {
+		padding-bottom: 50px;
+		font-weight: bold;
+	}
 	/* <!-- Les plus populaires --> */
 
 	.populaires-icone {
@@ -232,6 +255,9 @@ p {
 .p-h3-marseille {
 	padding: 18px;
 }
+.space-bottom{
+    padding-bottom: 50px;
+}
 
 /* section-footer */
 
@@ -239,7 +265,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	row-gap: 50px;
-	padding-top: 50px;
+	padding-top: 10px;
 }
 .space-gap-list-footer {
 	display: flex;
