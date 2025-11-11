@@ -4,8 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="CSS/style.css" />
-
-		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<script
+			src="https://kit.fontawesome.com/7184ab7233.js"
+			crossorigin="anonymous"></script>
+		<link rel="icon" href="images/logo/Booki.png" type="images/png" />
+		<!-- l'icone de Logo Booki dans la fenetre du navigateur -->
+		<title>Booki</title>
 	</head>
 	<body>
 		<main>
@@ -32,20 +47,28 @@
 						<p>En plein centre-ville ou en pleine nature</p>
 					</div>
 					<div>
-						<i>icone fontaweson</i>
-						<input type="text" name="" id="" />
-						<button>Rechercher</button>
+						<i class="fa-solid fa-location-dot"></i>
+						<input
+							type="text"
+							name="Search-bar"
+							id="search-bar"
+							placeholder="Marseille, France" /><!--Id class ne pas mettre de Majuscules -->
+						<button><i class="fa-solid fa-magnifying-glass"></i></button>
 					</div>
 					<div>
 						<p>Filtres</p>
 
-						<button><i></i>Économique</button>
-						<button><i></i>Familial</button>
-						<button><i></i>Romantique</button>
-						<button><i></i>Nos pépites</button>
+						<div class="btn-filters-grid">
+							<button>
+								<i class="fa-solid fa-money-bill-wave"></i>Économique
+							</button>
+							<button><i class="fa-solid fa-person"></i>Familial</button>
+							<button><i class="fa-solid fa-heart"></i>Romantique</button>
+							<button><i class="fa-solid fa-fire"></i>Nos pépites</button>
+						</div>
 					</div>
-					<div>
-						<i></i>
+					<div class="info-filters">
+						<i class="fa-solid fa-info info-icon"></i>
 						<p>Plus de 500 logements sont disponibles dans cette ville</p>
 					</div>
 				</div>
@@ -54,16 +77,16 @@
 			<!-- Section Hebergemenents -->
 			<section>
 				<div>
-					<div>
-						<h2>Hébergement à Marseille</h2>
+					<h2>Hébergement à Marseille</h2>
+					<div class="space-gap">
 						<!-- debut x3 -->
-						<div>
-							<div>
+						<div class="space-gap">
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/fred-kleber.jpg"
 										alt="Hôtel du port"
-                                        class="img-size" />
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -71,21 +94,21 @@
 										<p>Nuit à partir de 52€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 
-							<div>
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/febrian-zakaria.jpg"
 										alt="Hôtel Chez Amina"
-                                        class="img-size" />
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -93,21 +116,21 @@
 										<p>Nuit à partir de 96€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 
-							<div>
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/reisetopia.jpg"
-										alt="Hôtel Les mouttes" 
-                                        class="img-size"/>
+										alt="Hôtel Les mouttes"
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -115,23 +138,24 @@
 										<p>Nuit à partir de 76€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 						</div>
 						<!-- fin x3  -->
 
-						<div>
-							<div>
+						<div class="space-gap">
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/annie-spratt.jpg"
-										alt="Hôtel de la mer" class="img-size"/>
+										alt="Hôtel de la mer"
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -139,20 +163,21 @@
 										<p>Nuit à partir de 46€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 
-							<div>
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/marcus-loke.jpg"
-										alt="Auberge La Canebière" class="img-size"/>
+										alt="Auberge La Canebière"
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -160,20 +185,21 @@
 										<p>Nuit à partir de 25€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 
-							<div>
+							<div class="hebergements-and-populaires">
 								<div class="img-size">
 									<img
 										src="images/hebergements/nicate-lee.jpg"
-										alt="Auberge Le Panier" class="img-size"/>
+										alt="Auberge Le Panier"
+										class="img-size" />
 								</div>
 								<div>
 									<div>
@@ -181,17 +207,18 @@
 										<p>Nuit à partir de 23€</p>
 									</div>
 									<div>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
-										<i></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
 									</div>
 								</div>
 							</div>
 						</div>
 						<button>Afficher plus</button>
 					</div>
+
 					<!-- Les plus populaires -->
 					<div>
 						<h2>Les plus populaires</h2>
@@ -199,12 +226,13 @@
 					</div>
 
 					<!-- div x 3  -->
-					<div>
-						<div>
+					<div class="space-gap">
+						<div class="hebergements-and-populaires">
 							<div class="img-size">
 								<img
 									src="images/hebergements/emile-guillemot.jpg"
-									alt="Hôtel Le soleil du matin" class="img-size"/>
+									alt="Hôtel Le soleil du matin"
+									class="img-size" />
 							</div>
 
 							<div>
@@ -214,19 +242,20 @@
 								</div>
 
 								<div>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="hebergements-and-populaires">
 							<div class="img-size">
 								<img
 									src="images/hebergements/aw-creative.jpg"
-									alt="Chambres d'hôtes Au cœur de l'eau" class="img-size"/>
+									alt="Chambres d'hôtes Au cœur de l'eau"
+									class="img-size" />
 							</div>
 
 							<div>
@@ -236,19 +265,20 @@
 								</div>
 
 								<div>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="hebergements-and-populaires">
 							<div class="img-size">
 								<img
 									src="images/hebergements/febrian-zakaria2.jpg"
-									alt="Hôtel Bleu et Blanc" class="img-size"/>
+									alt="Hôtel Bleu et Blanc"
+									class="img-size" />
 							</div>
 
 							<div>
@@ -258,11 +288,11 @@
 								</div>
 
 								<div>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
 								</div>
 							</div>
 						</div>
@@ -273,7 +303,10 @@
 			<section>
 				<div>
 					<div class="img-size">
-						<img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port" class="img-size"/>
+						<img
+							src="images/activites/reno-laithienne.jpg"
+							alt="Vieux-Port"
+							class="img-size" />
 					</div>
 					<h3>Vieux-Port</h3>
 				</div>
@@ -281,7 +314,8 @@
 					<div class="img-size">
 						<img
 							src="images/activites/paul-hermann.jpg"
-							alt="Fort de Pomègues" class="img-size"/>
+							alt="Fort de Pomègues"
+							class="img-size" />
 					</div>
 					<h3>Fort de Pomègues</h3>
 				</div>
@@ -289,7 +323,8 @@
 					<div class="img-size">
 						<img
 							src="images/activites/kilyan-sockalingum.jpg"
-							alt="Parc national des Calanques" class="img-size"/>
+							alt="Parc national des Calanques"
+							class="img-size" />
 					</div>
 					<h3>Parc national des Calanques</h3>
 				</div>
@@ -297,7 +332,8 @@
 					<div>
 						<img
 							src="images/activites/florian-wehde.jpg"
-							alt="Notre-Dame-de-la-Garde" class="img-size"/>
+							alt="Notre-Dame-de-la-Garde"
+							class="img-size" />
 					</div>
 					<h3>Notre-Dame-de-la-Garde</h3>
 				</div>
