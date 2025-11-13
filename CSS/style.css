@@ -9,13 +9,13 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0px;
-    padding: 0px;
-    padding-top: 25px;
+	padding: 0px;
+	padding-top: 25px;
 }
-section, 
-aside, 
-footer{
-    padding: 15px;
+section,
+aside,
+footer {
+	padding: 15px;
 }
 
 footer,
@@ -97,22 +97,21 @@ p {
 	}
 
 	.btn-nav {
-        text-align: center;
+		text-align: center;
 		width: 100%;
 		font-size: 18px;
 		display: flex;
 		justify-content: space-around;
-
 	}
 
-    .btn-nav-a {
-        border-bottom: #f2f2f2 solid 2px;
-        padding-bottom: 10px;
-        width: 50%;
-    }
-    .btn-nav-a:hover {
-        color: #0065fc;
-        border-bottom: #0065fc solid 2px;
+	.btn-nav-a {
+		border-bottom: #f2f2f2 solid 2px;
+		padding-bottom: 10px;
+		width: 50%;
+	}
+	.btn-nav-a:hover {
+		color: var(--main-color);
+		border-bottom: var(--main-color) solid 2px;
 	}
 
 	/* Section en-tête */
@@ -150,7 +149,7 @@ p {
 	}
 
 	.search-bar-i {
-		background-color: #0065fc;
+		background-color: var(--main-color);
 		border: none;
 		color: white;
 		padding: 15px;
@@ -161,17 +160,19 @@ p {
 	.search-bar-i i {
 		font-size: 16px;
 	}
-	.btn-filters-grid {
+	.btn-filters-flex {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 2.5vh;
+		padding-bottom: 20px;
 	}
 	.btn-filters-radius {
-		padding: 8px;
+		padding: 15px 0px 15px 0px;
 		border-radius: 25px;
 		border: #d9d9d9 1px solid;
 		background-color: #fff;
 		font-weight: bold;
+		font-size: 16px;
 	}
 	.btn-filters-radius:hover {
 		background-color: #deebff;
@@ -232,6 +233,12 @@ p {
 	}
 
 	/* Section Hebergemenents*/
+	.space-gap-mobile {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
 	.space-gap {
 		display: flex;
 		flex-direction: column;
@@ -255,8 +262,8 @@ p {
 .p-h3-marseille {
 	padding: 18px;
 }
-.space-bottom{
-    padding-bottom: 50px;
+.space-bottom {
+	padding-bottom: 50px;
 }
 
 /* section-footer */
@@ -275,7 +282,132 @@ p {
 
 /* Tablette  */
 @media (min-width: 1024px) {
+	body {
+		padding: 0;
+	}
+	main {
+		margin: 0;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.bg-gray {
+		background-color: var(--main-bg-color);
+		margin-bottom: 35px;
+		border-radius: 25px;
+	}
+
+	.bar-nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.btn-nav {
+		text-align: center;
+		width: 100%;
+		font-size: 18px;
+		display: flex;
+		justify-content: end;
+		gap: 50px;
+	}
+
+	.btn-nav-a {
+		border-bottom: 0;
+		border-top: #f2f2f2 solid 2px;
+		padding: 20px 0px;
+		width: auto;
+	}
+	.btn-nav-a:hover {
+		border-bottom: 0;
+		border-top: var(--main-color) solid 2px;
+	}
+	.search-bar {
+		display: flex;
+		justify-content: start;
+		margin-top: 20px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+	.btn-filters-flex {
+		display: flex;
+		justify-content: start;
+		padding-bottom: 15px;
+		gap: 20px;
+	}
+	.btn-filters-radius {
+		padding: 15px;
+		border-radius: 25px;
+		border: #d9d9d9 1px solid;
+		background-color: #fff;
+		font-weight: bold;
+	}
+	.btn-filters-radius:hover {
+		background-color: #deebff;
+	}
+
+	.info-icon {
+		border: solid 1px;
+		border-radius: 50%;
+		padding: 5px;
+		color: var(--main-color);
+		border-color: lightgray;
+	}
+
+	.hebergements-and-populaires {
+		width: 280px;
+	}
+
+	.space-gap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 15px;
+	}
+
+	.flex-populaires-card {
+		width: 280px;
+	}
+	.text-stars-populaires {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	.boxshadow-Marseille {
+		width: 194px;
+	}
+	/* Activités à Marseille  */
+	.img-container {
+		height: 270px;
+	}
+	.img-size-container {
+		width: 100%;
+		height: 100%;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+		object-position: center;
+	}
+	/* Footer  */
+	.space-gap-footer-tablette {
+        display: flex;
+		flex-direction: row;
+        justify-content: flex-start;
+		gap: 150px;
+		padding-top: 10px;
+	}
+	.space-gap-list-footer-tablette {
+		display: flex;
+		flex-direction: column;
+        justify-content: flex-start;
+		row-gap: 15px;
+	}
+    .bg-gray-footer {
+		background-color: var(--main-bg-color);
+		margin-bottom: 0px;
+		border-radius: 0px;
+	}
 }
+
 
 /* Desktop  */
 @media (min-width: 1440px) {

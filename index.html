@@ -33,8 +33,8 @@
 							class="logo-booki" />
 					</div>
 					<div class="btn-nav">
-						<a href="#" class="btn-nav-a">Hébergements</a> <!-- 16 px-->
-						<a href="#" class="btn-nav-a">Activités</a> <!-- 16 px-->
+						<a href="#hébergement" class="btn-nav-a">Hébergements</a> <!-- 16 px-->
+						<a href="#Activités" class="btn-nav-a">Activités</a> <!-- 16 px-->
 					</div>
 				</nav>
 			</header>
@@ -63,7 +63,7 @@
 					<div>
 						<h2 class="fs-18">Filtres</h2> <!-- 18 px-->
 
-						<div class="btn-filters-grid ">
+						<div class="btn-filters-flex ">
 							<button class="btn-filters-radius"><i class="fa-solid fa-money-bill-wave blue-icone blue-icone-padding"></i>Économique</button>
 							<button class="btn-filters-radius"><i class="fa-solid fa-person blue-icone blue-icone-padding"></i>Familial</button>
 							<button class="btn-filters-radius"><i class="fa-solid fa-heart blue-icone blue-icone-padding"></i>Romantique</button>
@@ -79,9 +79,9 @@
 
 			<!-- Section Hebergemenents -->
 			
-			<section>
-				<h2>Hébergement à Marseille</h2> <!-- 22 px-->
-					<div class="space-gap">
+			<section class="bg-gray">
+				<h2 id="hébergement">Hébergement à Marseille</h2> <!-- 22 px-->
+					<div class="space-gap-mobile">
 						<!-- debut x3 -->
 						<div class="space-gap">
 							<div class="hebergements-and-populaires">
@@ -152,7 +152,7 @@
 						</div>
 						<!-- fin x3  -->
 
-						<div class="space-gap">
+						<div class="space-gap hergements-flex-card">
 							<div class="hebergements-and-populaires">
 								<div>
 									<img
@@ -221,11 +221,12 @@
 						</div>
 						<a href="#" class="fs-18 a-bold">Afficher plus</a> <!-- 18 px-->
 					</div>
+                    
             </section>
             
 					<!-- Les plus populaires -->
         
-            <aside>
+            <aside class="bg-gray">
                 <div class="populaires-icone">
 						<h2>Les plus populaires</h2>
 						<i class="fa-solid fa-chart-line blue-icone"></i>
@@ -309,49 +310,49 @@
 			
 			<!-- section Activités à Marseille  -->
 			<section class="space-bottom">
-                <h2>Activités à Marseille</h2> <!-- 22 px-->
+                <h2 id="Activités">Activités à Marseille</h2> <!-- 22 px-->
 				<div class="space-gap ">
 					<div class="boxshadow-Marseille">
-						<div>
+						<div class="img-container">
 							<img
 								src="images/activites/reno-laithienne.jpg"
 								alt="Vieux-Port"
-								class="img-size" />
+								class="img-size img-size-container" />
 						</div>
 						<h4 class="p-h3-marseille">Vieux-Port</h4> <!-- 16 px-->
 					</div>
 					<div class="boxshadow-Marseille">
-						<div>
+						<div class="img-container">
 							<img
 								src="images/activites/paul-hermann.jpg"
 								alt="Fort de Pomègues"
-								class="img-size" />
+								class="img-size img-size-container" />
 						</div>
 						<h4 class="p-h3-marseille">Fort de Pomègues</h4> <!-- 16 px-->
 					</div>
 					<div class="boxshadow-Marseille">
-						<div>
+						<div class="img-container">
 							<img
 								src="images/activites/kilyan-sockalingum.jpg"
 								alt="Parc national des Calanques"
-								class="img-size" />
+								class="img-size img-size-container" />
 						</div>
 						<h4 class="p-h3-marseille">Parc national des Calanques</h4> <!-- 16 px-->
 					</div>
 					<div class="boxshadow-Marseille">
-						<div>
+						<div class="img-container">
 							<img
 								src="images/activites/florian-wehde.jpg"
 								alt="Notre-Dame-de-la-Garde"
-								class="img-size" />
+								class="img-size img-size-container" />
 						</div>
 						<h4 class="p-h3-marseille">Notre-Dame-de-la-Garde</h4> <!-- 16 px-->
 					</div>
 				</div>
 			</section>
-			<footer >
-				<div class="space-gap-footer">
-					<div class="space-gap-list-footer">
+			<footer class="bg-gray bg-gray-footer">
+				<div class="space-gap-footer space-gap-footer-tablette">
+					<div class="space-gap-list-footer space-gap-list-footer-tablette">
 						<h3>À propos</h3> <!-- 18 px-->
 						<ul class="space-gap-list-footer">
 							<li><a href="#" >Fonctionnement du site</a></li> <!-- 16 px-->
@@ -359,14 +360,14 @@
 							<li><a href="#">Données et confidentialité</a></li> <!-- 16 px-->
 						</ul>
 					</div>
-					<div class="space-gap-list-footer">
+					<div class="space-gap-list-footer space-gap-list-footer-tablette">
 						<h3>Nos hébergements</h3> <!-- 18 px-->
 						<ul class="space-gap-list-footer">
                             <li><a href="#">Charte qualité</a></li> <!-- 16 px-->
 							<li><a href="#">Proposer votre hôtel</a></li> <!-- 16 px-->
 						</ul>
 					</div>
-					<div class="space-gap-list-footer">
+					<div class="space-gap-list-footer space-gap-list-footer-tablette">
 						<h3>Assistance</h3> <!-- 18 px-->
 						<ul class="space-gap-list-footer">
                            <li><a href="#">Centre d'aide</a></li> <!-- 16 px-->
