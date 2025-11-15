@@ -34,7 +34,7 @@
 					</div>
 					<div class="btn-nav">
 						<a href="#hébergement" class="btn-nav-a">Hébergements</a> <!-- 16 px-->
-						<a href="#Activités" class="btn-nav-a">Activités</a> <!-- 16 px-->
+						<a href="#activités" class="btn-nav-a">Activités</a> <!-- 16 px-->
 					</div>
 				</nav>
 			</header>
@@ -58,9 +58,10 @@
 							placeholder="Ville, Pays"
                             value="Marseille, France" /><!--Id class ne pas mettre de Majuscules -->
 						    <button class="search-bar-i"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="search-bar-research">Rechercher</button>
                         </form>					
 					</div>
-					<div>
+					<div class="btn-desktop">
 						<h2 class="fs-18">Filtres</h2> <!-- 18 px-->
 
 						<div class="btn-filters-flex ">
@@ -78,8 +79,10 @@
 			</section>
 
 			<!-- Section Hebergemenents -->
-			
-			<section class="bg-gray">
+			<div class="hebergements-populaires-container">
+
+                <section class="bg-gray">
+                
 				<h2 id="hébergement">Hébergement à Marseille</h2> <!-- 22 px-->
 					<div class="space-gap-mobile">
 						<!-- debut x3 -->
@@ -233,7 +236,7 @@
 				</div>
 
 					<!-- div x 3  -->
-				<div class="space-gap">
+				<div class="space-gap column-populaire">
 						<div class="flex-populaires-card">
 							<div>
 								<img
@@ -306,11 +309,13 @@
 					</div>
 				</div>
             </aside>
+            </div>
+			
 					
 			
 			<!-- section Activités à Marseille  -->
 			<section class="space-bottom">
-                <h2 id="Activités">Activités à Marseille</h2> <!-- 22 px-->
+                <h2 id="activités">Activités à Marseille</h2> <!-- 22 px-->
 				<div class="space-gap ">
 					<div class="boxshadow-Marseille">
 						<div class="img-container">
@@ -351,7 +356,7 @@
 				</div>
 			</section>
 			<footer class="bg-gray bg-gray-footer">
-				<div class="space-gap-footer space-gap-footer-tablette">
+				<div class="space-gap-footer space-gap-footer-tablette ">
 					<div class="space-gap-list-footer space-gap-list-footer-tablette">
 						<h3>À propos</h3> <!-- 18 px-->
 						<ul class="space-gap-list-footer">

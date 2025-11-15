@@ -80,6 +80,17 @@ p {
 	object-position: center;
 }
 
+/* btn research à la racine et caché (hidden)*/
+.search-bar-research {
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
 /* Mobile  */
 @media (min-width: 375px) {
 	/* header */
@@ -380,6 +391,11 @@ p {
 	.img-container {
 		height: 270px;
 	}
+	.p-h3-marseille {
+		height: 38px;
+		display: flex;
+		align-items: center;
+	}
 	.img-size-container {
 		width: 100%;
 		height: 100%;
@@ -389,30 +405,96 @@ p {
 	}
 	/* Footer  */
 	.space-gap-footer-tablette {
-        display: flex;
+		display: flex;
 		flex-direction: row;
-        justify-content: flex-start;
+		justify-content: flex-start;
 		gap: 150px;
 		padding-top: 10px;
 	}
 	.space-gap-list-footer-tablette {
 		display: flex;
 		flex-direction: column;
-        justify-content: flex-start;
+		justify-content: flex-start;
 		row-gap: 15px;
 	}
-    .bg-gray-footer {
+	.bg-gray-footer {
 		background-color: var(--main-bg-color);
 		margin-bottom: 0px;
 		border-radius: 0px;
 	}
 }
 
-
 /* Desktop  */
 @media (min-width: 1440px) {
-}
 
+    /* <!-- Section en-tête --> */
+    .search-bar-research {
+        display: block;
+        border-radius: 0px 15px 15px 0px;
+        font-weight: 700;
+    }
+
+    /* btn search icone caché */
+    .search-bar-i {
+        display: none;
+    }
+
+    .btn-desktop{
+        display: flex;
+        margin-top: 20px;
+        gap: 15px; /* space between filtres and buttons */
+    }
+
+    .hebergements-populaires-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .column-populaire {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .space-gap {
+        gap: 25px;
+    }
+
+    .flex-populaires-card {
+        width: 370px;
+    }
+    
+    .boxshadow-Marseille {
+        width: 298px;
+    }
+
+    .img-container {
+        height: 380px;
+    }
+
+    .space-gap-footer {
+        gap: 20%;
+    }
+}
 /* Large Desktop  */
 @media (min-width: 1900px) {
+    main {
+        width: 1440px;
+        margin: auto;
+    }
+
+    .space-gap-mobile {
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .column-populaire {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .populaires-icone {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
