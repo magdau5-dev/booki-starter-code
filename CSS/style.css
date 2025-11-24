@@ -25,6 +25,7 @@ aside {
 
 .blue-icone {
 	color: var(--main-color);
+    font-size: 14px;
 }
 .gray-icone {
 	color: #d9d9d9;
@@ -96,6 +97,10 @@ p {
     border-radius: 15px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     display: none;
+}
+
+.padding-card-heb {
+    padding: 10px;
 }
 
 /* Mobile  */
@@ -217,7 +222,7 @@ p {
 	}
 
 	.a-bold {
-		padding-bottom: 50px;
+		padding-bottom: 5px;
 		font-weight: bold;
 	}
 	/* <!-- Les plus populaires --> */
@@ -235,6 +240,7 @@ p {
 	}
 
 	.flex-populaires-card {
+        background-color: #fff;
 		height: 146px;
 		display: flex;
 		border-radius: 25px;
@@ -251,13 +257,14 @@ p {
 		object-position: center;
 	}
 	.text-stars-populaires {
+        padding: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
 	/* Section Hebergemenents*/
-	.space-gap-mobile {
+	.space-gap-card {
 		display: flex;
 		flex-direction: column;
 		row-gap: 15px;
@@ -269,7 +276,8 @@ p {
 		row-gap: 15px;
 	}
 
-	.hebergements-and-populaires {
+	.heb-pop{
+        background-color: #fff;
 		border-radius: 25px;
 		box-sizing: border-box;
 		padding: 5px;
@@ -327,6 +335,17 @@ p {
 		align-items: center;
 	}
 
+    .search-bar-research {
+        display: block;
+        border-radius: 0px 15px 15px 0px;
+        font-weight: 700;
+    }
+
+    /* btn search icone caché */
+    .search-bar-i {
+        display: none;
+    }
+
 	.btn-nav {
 		text-align: center;
 		width: 100%;
@@ -378,7 +397,7 @@ p {
 		border-color: lightgray;
 	}
 
-	.hebergements-and-populaires {
+	.heb-pop{
 		width: 280px;
 	}
 
@@ -449,16 +468,6 @@ p {
 @media (min-width: 1440px) {
 
     /* <!-- Section en-tête --> */
-    .search-bar-research {
-        display: block;
-        border-radius: 0px 15px 15px 0px;
-        font-weight: 700;
-    }
-
-    /* btn search icone caché */
-    .search-bar-i {
-        display: none;
-    }
 
     .btn-desktop{
         display: flex;
@@ -503,7 +512,7 @@ p {
         margin: auto;
     }
 
-    .space-gap-mobile {
+    .space-gap-card {
         padding-left:20px;
         padding-right: 20px;
     }
